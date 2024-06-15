@@ -1,0 +1,8 @@
+export { createDeck } from './createDeck'
+export { takeCard } from './takeCard'
+export { cardValue } from './cardValue'
+export { startGame } from './startGame'
+export { acumPoints } from './acumPoints'
+export { setWiner } from './setWiner'
+export { computerTurn } from './computerTurn'
+export { createCard } from './createCard'
