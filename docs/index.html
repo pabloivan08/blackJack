@@ -2,38 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/blackJack/vite.svg" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <script type="module" crossorigin src="/assets/index-DJ7MKrgH.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CA98aBag.css">
+    <script type="module" crossorigin src="/blackJack/assets/index-799Uu9hd.js"></script>
+    <link rel="stylesheet" crossorigin href="/blackJack/assets/index-BDJIQcYY.css">
   </head>
   <body>
-    <header class="title">BlackJack</header>
-    <div class="mt-2">
-      <div class="col text-center">
-        <button id="resetBtn" class="btn-danger">Nuevo Juego</button>
-        <button id="takeBtn" class="btn-primary">Pedir Carta</button>
-        <button id="stopBtn" class="btn-primary">Detener</button>
-      </div>
+    <header class="title">
+      <h2>BlackJack</h2>
+      <p>Balance - $<span>0</span></p>
+    </header>
+    <main>
+      <section>
+        <div>
+          <h1>Puntos - <small>0</small></h1>
+          <div id="player-cards" class="deck-cards">
+            <!-- cartas Jugador -->
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h1>Computadora - <small></small></h1>
+          <div id="computer-cards" class="deck-cards">
+            <!-- cartas Computadora -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="divControls">
+      <button id="resetBtn" class="resetBtn">Nuevo Juego</button>
+      <button id="takeBtn" class="takeBtn">Pedir Carta</button>
+      <button id="stopBtn" class="stopBtn">Detener</button>
     </div>
-    <section>
-      <div>
-        <h1>Puntos - <small>0</small></h1>
-        <div id="player-cards" class="deck-cards">
-          <!-- cartas Jugador -->
-        </div>
-      </div>
-    </section>
-    <section>
-      <div>
-        <h1>Computadora - <small></small></h1>
-        <div id="computer-cards" class="deck-cards">
-          <!-- cartas Computadora -->
-        </div>
-      </div>
-    </section>
 
   </body>
 </html>
