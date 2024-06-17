@@ -31,6 +31,7 @@ import { takeCard, computerTurn, startGame, acumPoints, createCard } from './use
     
     if ( playerScore >= 21 ) {
       takeBtn.disabled = true 
+      stopBtn.disabled = true
       computerTurn( playersScore, deck, 0, scores, deckDiv )
     } 
   })
